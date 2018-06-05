@@ -1,0 +1,29 @@
+<html>
+<head>
+
+  <title>So Toxic...</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<iframe width="0" height="0" src="https://www.youtube.com/embed/64FrYGRrKVY?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+<div class="centered"><b>ARSENIA IS TOXIC</b></div>
+
+
+<script type="application/javascript">
+const randomColor = () => '#' + Math.random().toString(16).substr(-6)
+const changeColor = () => document.body.style.backgroundColor = randomColor()
+
+setInterval(() => {
+  changeColor()
+}, 200)
+
+// start color animation as soon as document is ready
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    changeColor()
+  }
+}
+</script>
+</body>
+</html>
